@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediiplay</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/index.css">    
+    <link rel="stylesheet" href="styles/main.css">    
+    <script>
+      var background = 'none';
+    </script>
+</head>
+<body>  
+    <nav class="hor">
+        <img src="assets/img/Group 12@2x.png" class="logo">&trade;
+    <ul>
+        <li><a class="nav-link" href="search.html">Explore</a></li>
+        <li><a class="nav-link" href="search-music.html">Play</a></li>
+        <li><a class="nav-link" href="search-videos.html">Media</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+    </ul>
+    </nav>
+<nav class="ver">
+      <img src="assets/img/logo.png" class="verlogo">
+      <span id="menu" class="vicn"><i class="fa-solid fa-bars"></i><span class="emenu-text"> Menu</span></span>
+      <a id="search" class="active vicn" href="search.html"><i class="fa-solid fa-magnifying-glass"></i><span class="emenu-text"> Search</span></a>
+      <div class="emenu-item search-bar">
+            <div class="input-group mb-1">
+                <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon3"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+        </div>
+      </div>
+      <a class="vicn" href="search-music.html"><i class="fa-solid fa-music"></i><span class="emenu-text"> Music</span></a>
+      <a class="vicn" href="search-videos.html"><i class="fa-solid fa-clapperboard"></i><span class="emenu-text"> Videos</span></a>
+      <a class="vicn" href="trending.html"><i class="fa-solid fa-arrow-trend-up"></i><span class="emenu-text"> Trending</span></a>
+    </nav>
+    <div class="page-heading">
+      <h1>Mediiplay: </h1>
+      <h4>All your media needs in one place.</h4>
+    </div>
+    <div class="main-content">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="assets/img/quotes/1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="assets/img/quotes/2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="assets/img/quotes/3.jpg" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="assets/img/quotes/4.jpg" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="assets/img/quotes/5.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+      <div class="front-heading">
+          <h1>So what are you waiting for?</h1>
+          <div class="secondary-content">
+            <div class="jumbotron">
+              <h1 class="display-7">Play songs!</h1>
+              <hr>
+              <p class="lead" style="font-size: 1rem;">Find all your favourite songs without any hassle</p>
+              <p class="lead">
+                <a class="btn btn-outline-dark btn-sm" href="search-music.html" role="button">Take me there</a>
+              </p>
+            </div>
+
+            <div class="jumbotron" style="float: right">
+              <h1 class="display-7">Play videos!</h1>
+              <hr>
+              <p class="lead" style="font-size: 1rem;">Watch all your favourite videos in high quality.</p>
+              <p class="lead">
+                <a class="btn btn-outline-dark btn-sm" href="search-videos.html" role="button">Take me there</a>
+              </p>
+            </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+
+</html>
+
+<!-- #D6EAE5 -->
